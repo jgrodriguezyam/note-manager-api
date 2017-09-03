@@ -1,4 +1,4 @@
-/* Using Database sqlserver2008 and Connection String Server=link_jorge_HP\LOCALHOST; Database=NoteManager; User Id=sa; Password=********; */
+/* Using Database sqlserver2008 and Connection String Server=mssql6.gear.host; Database=notemanager; User Id=notemanager; Password=********; */
 /* VersionMigration migrating ================================================ */
 
 /* Beginning Transaction */
@@ -50,7 +50,7 @@ CREATE TABLE [dbo].[Company] ([Id] INT NOT NULL IDENTITY(1,1), [Name] NVARCHAR(2
 /* CreateTable Customer */
 CREATE TABLE [dbo].[Customer] ([Id] INT NOT NULL IDENTITY(1,1), [Name] NVARCHAR(250) NOT NULL, [LastName] NVARCHAR(250) NOT NULL, [Gender] INT NOT NULL, [Address] NVARCHAR(250) NOT NULL, [Colony] NVARCHAR(250) NOT NULL, [Municipality] NVARCHAR(250) NOT NULL, [HomePhone] NVARCHAR(250), [CellPhone] NVARCHAR(250), [CreatedBy] INT NOT NULL, [ModifiedBy] INT NOT NULL, [CreatedOn] DATETIME NOT NULL, [ModifiedOn] DATETIME NOT NULL, [IsActive] BIT NOT NULL, CONSTRAINT [PK_Customer] PRIMARY KEY ([Id]))
 
-INSERT INTO [dbo].[VersionInfo] ([Version], [AppliedOn], [Description]) VALUES (1, '2017-09-02T23:48:35', '_1_Seed')
+INSERT INTO [dbo].[VersionInfo] ([Version], [AppliedOn], [Description]) VALUES (1, '2017-09-03T02:01:21', '_1_Seed')
 /* Committing Transaction */
 /* 1: _1_Seed migrated */
 

@@ -1,4 +1,4 @@
-/* Using Database sqlserver2008 and Connection String Server=link_jorge_HP\LOCALHOST; Database=NoteManager; User Id=sa; Password=********; */
+/* Using Database sqlserver2008 and Connection String Server=mssql6.gear.host; Database=notemanager; User Id=notemanager; Password=********; */
 /* 1: _1_Seed reverting ====================================================== */
 
 /* Beginning Transaction */

@@ -5,7 +5,8 @@
 
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)'==''">Debug</Configuration>
-    <ConnectionString Condition=" '$(ConnectionString)'==''">Server=link_jorge_HP\LOCALHOST; Database=NoteManager; User Id=sa; Password=desarrollo;</ConnectionString>
+    <!--<ConnectionString Condition=" '$(ConnectionString)'==''">Server=link_jorge_HP\LOCALHOST; Database=NoteManager; User Id=sa; Password=desarrollo;</ConnectionString>-->
+    <ConnectionString Condition=" '$(ConnectionString)'==''">Server=mssql6.gear.host; Database=notemanager; User Id=notemanager; Password=Jr22dXH7x?1!;</ConnectionString>
     <ArtifactsPath Condition=" '$(ArtifactsPath)'==''">../Artifacts</ArtifactsPath>
 
     <CoreAssembly Condition=" '$(CoreAssembly)'==''">../bin/$(Configuration)/NoteManager.Migrations.dll</CoreAssembly>
