@@ -37,6 +37,7 @@ namespace NoteManager.Mapper.Configs
             TypeAdapterConfig<Company, Company>
                 .NewConfig()
                 .IgnoreMember(dest => dest.Id)
+                .IgnoreMember(dest => dest.Folio)
 
                 .IgnoreMember(dest => dest.CreatedBy)
                 .IgnoreMember(dest => dest.CreatedOn)

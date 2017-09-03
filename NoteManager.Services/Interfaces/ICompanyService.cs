@@ -10,5 +10,6 @@ namespace NoteManager.Services.Interfaces
         SuccessResponse Update(CompanyRequest request);
         CompanyResponse Get(GetCompanyRequest request);
         SuccessResponse Delete(DeleteCompanyRequest request);
+        GetFolioResponse GetFolio(GetFolioRequest request);
     }
 }

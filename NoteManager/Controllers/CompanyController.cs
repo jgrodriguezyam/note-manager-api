@@ -43,5 +43,11 @@ namespace NoteManager.Controllers
         {
             return _companyService.Delete(request);
         }
+
+        [HttpGet, Route("companies/folio/{CompanyId}")]
+        public GetFolioResponse GetFolio(GetFolioRequest request)
+        {
+            return _companyService.GetFolio(request);
+        }
     }
 }

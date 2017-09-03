@@ -59,6 +59,8 @@
     <Compile Include="BaseResponse\IsAliveResponse.cs" />
     <Compile Include="BaseResponse\LoginResponse.cs" />
     <Compile Include="BaseResponse\SuccessResponse.cs" />
+    <Compile Include="Message\Companies\GetFolioRequest.cs" />
+    <Compile Include="Message\Companies\GetFolioResponse.cs" />
     <Compile Include="Message\Customers\CustomerRequest.cs" />
     <Compile Include="Message\Customers\CustomerResponse.cs" />
     <Compile Include="Message\Customers\DeleteCustomerRequest.cs" />

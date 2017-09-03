@@ -10,6 +10,5 @@
         public string Rfc { get; set; }
         public string OfficePhone { get; set; }
         public string OfficeCellPhone { get; set; }
-        public string Date { get; set; }
     }
 }

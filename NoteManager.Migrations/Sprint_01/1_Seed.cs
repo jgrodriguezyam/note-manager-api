@@ -34,7 +34,7 @@ namespace NoteManager.Migrations.Sprint_01
                 .WithColumn("Rfc").AsString(250).NotNullable()
                 .WithColumn("OfficePhone").AsString(250).Nullable()
                 .WithColumn("OfficeCellPhone").AsString(250).Nullable()
-                .WithColumn("Date").AsDate().NotNullable()
+                .WithColumn("Folio").AsInt32().NotNullable().WithDefaultValue(0)
 
                 .WithColumn("CreatedBy").AsInt32().NotNullable()
                 .WithColumn("ModifiedBy").AsInt32().NotNullable()

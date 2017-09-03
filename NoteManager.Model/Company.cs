@@ -13,7 +13,7 @@ namespace NoteManager.Model
         public string Rfc { get; set; }
         public string OfficePhone { get; set; }
         public string OfficeCellPhone { get; set; }
-        public DateTime Date { get; set; }
+        public int Folio { get; set; }
 
         public bool IsActive { get; set; }
     }

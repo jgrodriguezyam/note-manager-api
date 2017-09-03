@@ -25,7 +25,6 @@ namespace NoteManager.Services.Implements
             _companyValidator = companyValidator;
         }
 
-
         public FindCompaniesResponse Find(FindCompaniesRequest request)
         {
             try
@@ -111,6 +110,22 @@ namespace NoteManager.Services.Implements
                 company.ThrowExceptionIfRecordIsNull();
                 _companyRepository.Remove(company);
                 return new SuccessResponse { IsSuccess = true };
+            }
+            catch (DataAccessException)
+            {
+                throw new ApplicationException();
+            }
+        }
+
+        public GetFolioResponse GetFolio(GetFolioRequest request)
+        {
+            try
+            {
+                var company = _companyRepository.FindBy(request.CompanyId);
+                company.ThrowExceptionIfRecordIsNull();
+                company.Folio++;
+                _companyRepository.Update(company);
+                return new GetFolioResponse { Folio = company.Folio };
             }
             catch (DataAccessException)
             {

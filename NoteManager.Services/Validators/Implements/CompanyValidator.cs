@@ -18,7 +18,6 @@ namespace NoteManager.Services.Validators.Implements
                 RuleFor(company => company.Rfc).NotNull().NotEmpty();
                 RuleFor(company => company.OfficePhone).NotNull().NotEmpty();
                 RuleFor(company => company.OfficeCellPhone).NotNull().NotEmpty();
-                RuleFor(company => company.Date).NotNull().NotEmpty();
             });
         }
     }
